@@ -2,7 +2,7 @@ configure :test do
   set :database, {
     adapter: 'postgresql',
     enconding: 'utf8',
-    database: 'onebitbot_test',
+    database: 'brenbot_test',
     pool: 5,
     username: 'postgres',
     host: 'postgres'
