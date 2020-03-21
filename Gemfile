@@ -8,7 +8,8 @@ gem 'rake'
 gem 'pg_search', '~> 2.0.1'
 gem 'factory_bot'
 gem 'ffaker'
-gem 'database_cleaner'
+gem 'rest-client'
+gem 'webmock'
 
 group :development do
   gem 'tux'
