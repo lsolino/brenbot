@@ -21,11 +21,11 @@ configure :development do
 end
 
 configure :production do
-  db = URI.parse(ENV['DATABASE_URL'])
-
+  db = URI.parse(ENV['DATABASE_URL'] || 'postgres:///postgres/brenbot_production')
+ 
   set :database, {
-    adapter: 'postgresql',
-    host: db.host,
+    adapter:  'postgresql',
+    host:     db.host,
     username: db.user,
     password: db.password,
     database: db.path[1..-1],

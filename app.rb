@@ -10,4 +10,23 @@ class App < Sinatra::Base
     'Página Inicial'
   end
 
+  post '/webhook' do
+    request.body.rewind
+    result = JSON.parse(request.body.read)["queryResult"]
+
+    response = TranslateService.new(result["parameters"]).call
+    #response = InterpretService.call(result["action"], result["parameters"])
+ 
+    content_type :json, charset: 'utf-8'
+    {
+      "fulfillmentText": response,
+      "payload": {
+        "telegram": {
+          "text": response,
+          "parse_mode": "Markdown"
+        }
+      }
+    }.to_json
+  end
+
 end
