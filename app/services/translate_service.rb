@@ -2,7 +2,6 @@ require 'rest-client'
 
 class TranslateService
   def initialize(sentence)
-    puts "SENTENCE >>>>>> #{sentence}"
     @sentence = sentence
   end
 
