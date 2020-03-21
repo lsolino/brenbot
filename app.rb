@@ -15,8 +15,11 @@ class App < Sinatra::Base
     result = JSON.parse(request.body.read)["queryResult"]
     
     sentence = result["parameters"]["sentence"]
+    action = result["action"]
 
-    response = TranslateService.new(sentence).call
+    response = InterpretService.new(action, sentence).call
+
+    #response = TranslateService.new(sentence).call
  
     content_type :json, charset: 'utf-8'
     {
