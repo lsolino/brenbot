@@ -10,6 +10,8 @@ class InterpretService
       TranslateEnglishService.new(sentence: @sentence).call
     when "translate_to_portuguese"
       TranslatePortugueseService.new(sentence: @sentence).call
+    when "help"
+      HelpService.call()
     else
       "Não compreendi o seu desejo"
     end
