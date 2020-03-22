@@ -2,7 +2,7 @@
 
 This chatbot was developed in the OneBitCode bootcamp and has the objective to translate anyword from Portuguese to English and vice versa.
 
-<h1>Installation</h1>
+<h2>Installation</h2>
 
 <strong> To this project was used the following technologies: </strong>
 <ol>
@@ -10,6 +10,7 @@ This chatbot was developed in the OneBitCode bootcamp and has the objective to t
   <li>Docker Compose - v1.25.4</li>
   <li>Ruby - v2.5.1</li>
   <li>Sinatra - v2.0.5</li>
+  <li>RSpec - v3.9.0</li>
   <li>PostgreSQL - v12.2</li>
   <li>DialogFlow</li>
   <li>Telegram</li>
@@ -20,9 +21,9 @@ This chatbot was developed in the OneBitCode bootcamp and has the objective to t
 docker-compose up --build
 ```
 
-<h1>Developed by</h1>
+<h2>Developed by</h2>
 <ul>
-  <li>Luan Soliño</li>
+  <li>Luan Soliño - luansolino@gmail.com</li>
 </ul>
 
 <hr>
@@ -31,7 +32,7 @@ docker-compose up --build
 
 Esse chatbot foi desenvolvido para o bootcamp do OneBitCode e têm o objetivo de traduzir qualquer palavra do Português para o Inglês e vice-versa
 
-<h1>Instalação</h1>
+<h2>Instalação</h2>
 
 <strong> Para esse projeto foi utilizado as tecnologias abaixo: </strong>
 <ol>
@@ -39,6 +40,7 @@ Esse chatbot foi desenvolvido para o bootcamp do OneBitCode e têm o objetivo de
   <li>Docker Compose - v1.25.4</li>
   <li>Ruby - v2.5.1</li>
   <li>Sinatra - v2.0.5</li>
+  <li>RSpec - v3.9.0</li>
   <li>PostgreSQL - v12.2</li>
   <li>DialogFlow</li>
   <li>Telegram</li>
@@ -49,7 +51,7 @@ Esse chatbot foi desenvolvido para o bootcamp do OneBitCode e têm o objetivo de
 docker-compose up --build
 ```
 
-<h1>Desenvolvido por</h1>
+<h2>Desenvolvido por</h2>
 <ul>
-  <li>Luan Soliño</li>
+  <li>Luan Soliño - luansolino@gmail.com</li>
 </ul>
